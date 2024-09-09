@@ -21,6 +21,12 @@ button {
     color: white;
     background-color: #1B006E;
     width: 100%;
+    transition: .1s;
+}
+
+button:hover {
+    background-color: #16015E;
+    transform: scale(1.025, 1);
 }
 
 .dotgothic {
