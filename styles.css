@@ -3,6 +3,7 @@
     margin: 0;
     border: 0;
     box-sizing: border-box;
+    background-color: #F3F4F8;
 }
 
 a {
@@ -64,7 +65,6 @@ button {
 }
 
 .right {
-    background-color: #F3F4F8;
     justify-content: end;
     align-items: start;
     gap: 2rem;
@@ -103,6 +103,24 @@ button {
     width: 100%;
 }
 
+.testimonials {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.testimonials .card {
+    padding: 1em;
+    gap: 1rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.card .card-main {
+    font-weight: 600;
+}
+
 @media (min-width: 1024px) {
     .split {
         flex-direction: row;
@@ -114,5 +132,12 @@ button {
 
     .main {
         font-size: 3.5rem;
+    }
+
+}
+
+@media (min-width: 750px) {
+    .testimonials {
+        flex-direction: row;
     }
 }
