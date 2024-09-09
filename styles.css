@@ -89,6 +89,7 @@ button:hover {
     top: 1rem;
     left: -.7rem;
     color: white;
+    background-color: transparent;
     opacity: .8;
 }
 
@@ -125,6 +126,53 @@ button:hover {
 
 .card .card-main {
     font-weight: 600;
+}
+
+.footer {
+    padding: 4rem;
+    justify-content: space-between;
+    gap: 2rem;
+    font-size: 1.1rem;
+}
+
+.footer, .footer *{
+    background-color: black;
+    color: white;
+}
+
+.footer .left {
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    flex: 1.5;
+}
+
+.left .head {
+    margin-bottom: 1rem;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer .right {
+    justify-content: start;
+    align-items: stretch;
+    gap: 2rem;
+    flex: 1;
+}
+
+hr {
+    color: red;
+    /* border: 1px solid; */
+    /* height: 2px; */
+}
+
+.right input {
+    border: 1px solid white;
+    padding: 1em;
+    border-radius: 1em;
+    min-width: 100%;
 }
 
 @media (min-width: 1024px) {
