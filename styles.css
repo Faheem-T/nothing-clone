@@ -6,16 +6,7 @@
     background-color: #F3F4F8;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
-
-img {
-    width: 100%;
-}
-
-button {
+.right button {
     padding: 1em;
     border-radius: 3em;
     color: white;
@@ -35,58 +26,33 @@ button:hover {
     font-style: normal;
 }
 
-.flexbox {
-    display: flex;
-}
 
-.column {
+/* .split {
     flex-direction: column;
-}
+} */
 
-.flex1 {
-    flex: 1;
-}
-
-.header {
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 4rem;
-}
-
-.header .logo {
-    font-size: 1.3rem;
-}
-
-.links {
-    gap: 2rem;
-}
-
-.split {
-    flex-direction: column;
-}
-
-.left {
+/* .left {
     width: 100%;
     overflow: hidden;
-}
+} */
 
-.right {
+/* .right {
     justify-content: end;
     align-items: start;
     gap: 2rem;
     padding: 2rem;
-}
+} */
 
-.left .container {
+.left .txt-on-img {
     position: relative;
 }
 
-.container .img-text {
+.img-text {
     position: absolute;
     font-size: 4rem;
     writing-mode: vertical-lr;
     text-orientation:sideways-right;
-    top: 1rem;
+    top: 5rem;
     left: -.7rem;
     color: white;
     background-color: transparent;
@@ -98,7 +64,7 @@ button:hover {
 }
 
 .main {
-    font-size: 2rem;
+    font-size: 3.5rem;
     font-weight: 550;
 }
 
@@ -162,12 +128,6 @@ button:hover {
     flex: 1;
 }
 
-hr {
-    color: red;
-    /* border: 1px solid; */
-    /* height: 2px; */
-}
-
 .right input {
     border: 1px solid white;
     padding: 1em;
@@ -178,14 +138,6 @@ hr {
 @media (min-width: 1024px) {
     .split {
         flex-direction: row;
-    }
-
-    .left {
-        width: 67%;
-    }
-
-    .main {
-        font-size: 3.5rem;
     }
 
 }
