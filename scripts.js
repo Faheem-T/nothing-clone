@@ -1,4 +1,4 @@
-// Adding bootstrap class names to .left, .right and .split
+// Adding bootstrap class names to .left, .right, .split, .card
 // Makes it so that I don't have to repeat myself too many times
 // Also, I will only need to change the classes in one place to affect all of the elements
 
@@ -18,4 +18,10 @@ for (let i = 0; i < rightDivs.length; i++) {
 const splitDivs = document.querySelectorAll(".right");
 for (let i = 0; i < splitDivs.length; i++) {
     splitDivs[i].classList.add("d-flex", "container-fluid", "p-0");
+}
+
+// Adding bootstrap to testimonial cards
+const cardDivs = document.querySelectorAll(".testCard");
+for (let i = 0; i < cardDivs.length; i++) {
+    cardDivs[i].classList.add("col-md-4", "col-sm-12", "d-flex", "flex-column", "p-1", "gap-3", "fs-2", "text-center", "m-0", "b-0");
 }

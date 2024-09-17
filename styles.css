@@ -1,8 +1,4 @@
 * {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    box-sizing: border-box;
     background-color: #F3F4F8;
 }
 
@@ -26,33 +22,16 @@ button:hover {
     font-style: normal;
 }
 
-
-/* .split {
-    flex-direction: column;
-} */
-
-/* .left {
-    width: 100%;
-    overflow: hidden;
-} */
-
-/* .right {
-    justify-content: end;
-    align-items: start;
-    gap: 2rem;
-    padding: 2rem;
-} */
-
 .left .txt-on-img {
     position: relative;
 }
 
 .img-text {
     position: absolute;
-    font-size: 4rem;
+    font-size: 2.5rem;
     writing-mode: vertical-lr;
     text-orientation:sideways-right;
-    top: 5rem;
+    top: 1rem;
     left: -.7rem;
     color: white;
     background-color: transparent;
@@ -64,57 +43,24 @@ button:hover {
 }
 
 .main {
-    font-size: 3.5rem;
+    font-size: 2rem;
     font-weight: 550;
 }
 
 .sub {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
-.button {
-    width: 100%;
-}
-
-.testimonials {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-}
-
-.testimonials .card {
-    padding: 1em;
-    gap: 1rem;
-    font-size: 1.8rem;
-    text-align: center;
-}
-
-.card .card-main {
-    font-weight: 600;
-}
-
-.footer {
+/* .footer {
     padding: 4rem;
     justify-content: space-between;
     gap: 2rem;
     font-size: 1.1rem;
-}
+} */
 
 .footer, .footer *{
     background-color: black;
     color: white;
-}
-
-.footer .left {
-    justify-content: space-between;
-    gap: 2rem;
-    flex-wrap: wrap;
-    flex: 1.5;
-}
-
-.left .head {
-    margin-bottom: 1rem;
 }
 
 .footer ul {
@@ -135,15 +81,17 @@ button:hover {
     min-width: 100%;
 }
 
-@media (min-width: 1024px) {
-    .split {
-        flex-direction: row;
+@media (min-width: 768px) {
+
+    .img-text {
+        font-size: 4rem;
     }
-
-}
-
-@media (min-width: 750px) {
-    .testimonials {
-        flex-direction: row;
+    
+    .main {
+        font-size: 3.5rem;
+    }
+    
+    .sub {
+        font-size: 1.2rem;
     }
 }
